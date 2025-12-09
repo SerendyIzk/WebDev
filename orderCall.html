@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="newlogo.png">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span><img src="newlogo.png" alt="logo"></span>
+                <span>NordWood</span>
+            </a>
+            <button class="mobile-menu-btn">
+                <i>☰</i>
+            </button>
+            <nav class="nav-menu">
+                <a href="catalog.html" class="nav-link">Каталог</a>
+                <a href="index.html#popularCategories" class="nav-link">Портфолио</a>
+                <a href="index.html#services" class="nav-link">Сервисы</a>
+                <a href="Promo.html" class="nav-link">Акции</a>
+                <a href="description.html" class="nav-link">О компании</a>
+                <a href="javascript:history.back()" class="btn">Назад</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contact Form Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="section-title animate-fade-in-up">
+                <h2>Форма заявки</h2>
+                <p>Заполните форму ниже, и мы перезвоним в удобное вам время</p>
+            </div>
+
+            <div class="form-container animate-fade-in-up animate-delay-1">
+                <div class="form-header">
+                    <h3>Обратный звонок</h3>
+                    <p>Бесплатная консультация с нашим специалистом</p>
+                </div>
+                <div class="form-body">
+                    <form id="callbackForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Ваше имя *</label>
+                                <input type="text" id="name" class="form-control" placeholder="Введите ваше имя" required>
+                                <div class="error-message" id="nameError">Пожалуйста, введите ваше имя</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Телефон *</label>
+                                <input type="tel" id="phone" class="form-control" placeholder="+358 " required>
+                                <div class="error-message" id="phoneError">Пожалуйста, введите корректный номер телефона</div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" class="form-control" placeholder="example@mail.fi">
+                                <div class="error-message" id="emailError">Пожалуйста, введите корректный email</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="preferredTime">Удобное время для звонка *</label>
+                                <select id="preferredTime" class="form-control" required>
+                                    <option value="">Выберите время</option>
+                                    <option value="morning">Утро (9:00 - 12:00)</option>
+                                    <option value="afternoon">День (12:00 - 17:00)</option>
+                                    <option value="evening">Вечер (17:00 - 20:00)</option>
+                                    <option value="anytime">В любое время</option>
+                                </select>
+                                <div class="error-message" id="timeError">Пожалуйста, выберите удобное время</div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Комментарий</label>
+                            <textarea id="message" class="form-control" placeholder="Расскажите, какая именно мебель вас интересует..."></textarea>
+                        </div>
+
+                        <div class="form-info">
+                            <p><i>✓</i> <strong>Гарантия конфиденциальности</strong> - Ваши данные не будут переданы третьим лицам</p>
+                            <p><i>✓</i> <strong>Быстрый ответ</strong> - Перезвоним вам как можно скорее</p>
+                            <p><i>✓</i> <strong>Бесплатно</strong> - Консультация и звонок совершенно бесплатны</p>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Заказать звонок</button>
+                    </form>
+
+                    <div class="success-message">
+                        <div class="success-icon">✓</div>
+                        <h3>Спасибо за вашу заявку!</h3>
+                        <p>Наш менеджер перезвонит вам в указанное время.</p>
+                        <p>Если вам срочно нужна помощь, вы можете позвонить нам напрямую:</p>
+                        <p style="font-size:1.4em;font-weight:700;color:hsl(207,80%,52%);margin:1em 0;">+358 9 123 4567</p>
+                        <a href="index.html" class="back-btn">Вернуться на главную</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>NordWood</h3>
+                    <p style="margin-bottom:1.5em;color:hsla(0,0%,100%,0.7);">Стильная мебель для дома и офиса. Создаем уютные пространства с 2014 года.</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/" class="social-link"><img src="LinkedinIcon.png" alt="LinkedIn"></a>
+                        <a href="https://www.facebook.com/" class="social-link"><img src="FacebookIcon.png" alt="Facebook"></a>
+                        <a href="https://www.instagram.com/" class="social-link"><img src="InstagramIcon.png" alt="Instagram"></a>
+                        <a href="https://telegram.org/" class="social-link"><img src="TelegramIcon.png" alt="Telegram"></a>
+                        <a href="http://x.com/" class="social-link"><img src="XIcon.png" alt="X"></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Быстрые ссылки</h3>
+                    <ul class="footer-links">
+                        <li>
+                            <a href="index.html">🏠 Главная страница</a>
+                        </li>
+                        <li>
+                            <a href="orderCall.html">📱 Заказать звонок</a>
+                        </li>
+                        <li>
+                            <a href="catalog.html">📋 Каталог товаров</a>
+                        </li>
+                        <li>
+                            <a href="Promo.html">⭐ Акции и скидки</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2025 NordWood. Все права защищены. Создано с ❤️ в Финляндии.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+    <script src="orderCall.js"></script>
+</body>
+</html>

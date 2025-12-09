@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="newlogo.png">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <span><img src="newlogo.png" alt="logo"></span>
+        <span>NordWood</span>
+      </a>
+      <button class="mobile-menu-btn">
+        <i>☰</i>
+      </button>
+      <nav class="nav-menu">
+        <a href="catalog.html" class="nav-link">Каталог</a>
+        <a href="index.html#popularCategories" class="nav-link">Портфолио</a>
+        <a href="index.html#services" class="nav-link">Сервисы</a>
+        <a href="Promo.html" class="nav-link">Акции</a>
+        <a href="description.html" class="nav-link">О компании</a>
+        <a href="orderCall.html" class="btn">Заказать звонок</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Preview Section -->
+  <section class="preview">
+    <div class="container preview-content">
+      <h1>Наш каталог</h1>
+      <p>Стильная мебель для дома и офиса</p>
+    </div>
+  </section>
+
+  <!-- Catalog Section -->
+  <section class="catalog-section">
+    <div class="container">
+      <div class="section-title animate-fade-in-up animate-delay-1">
+        <h2>Категории товаров</h2>
+        <p>Выбирайте мебель из нашего ассортимента</p>
+      </div>
+
+      <!-- Sofas Carousel -->
+      <div class="category-section animate-fade-in-up animate-delay-1">
+        <div class="category-header">
+          <h2 class="category-title">Диваны</h2>
+        </div>
+        <div class="carousel-container">
+          <div class="carousel" id="sofasCarousel">
+            <!-- Slide 1 -->
+            <div class="carousel-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  <div><img src="sofaCatalog1.png" style="transform:scale(0.3);"></div>
+                  <div class="product-badge">НОВИНКА</div>
+                </div>
+                <div class="product-content">
+                  <h3 class="product-title">Nordic Comfort</h3>
+                  <p class="product-description">Просторный диван с ортопедическим основанием и съемными чехлами. Идеален для большой гостиной.</p>
+                  <div class="product-price">1299€</div>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  <div><img src="sofaCatalog2.png" style="transform:scale(0.3);"></div>
+                  <div class="product-badge">-25%</div>
+                </div>
+                <div class="product-content">
+                  <h3 class="product-title">Scandi Lounge</h3>
+                  <p class="product-description">Угловой диван с механизмом трансформации в спальное место. Компактный и функциональный.</p>
+                  <div class="product-price">999€</div>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="carousel-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  <div><img src="sofaCatalog3.png" style="transform:scale(0.3);"></div>
+                  <div class="product-badge">ХИТ</div>
+                </div>
+                <div class="product-content">
+                  <h3 class="product-title">Minimalist Pro</h3>
+                  <p class="product-description">Современный минималистичный диван с высокими подлокотниками. Выполнен из экологичных материалов.</p>
+                  <div class="product-price">899€</div>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 4 -->
+            <div class="carousel-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  <div><img src="sofaCatalog4.png" style="transform:scale(0.42);"></div>
+                </div>
+                <div class="product-content">
+                  <h3 class="product-title">Eco Relax</h3>
+                  <p class="product-description">Диван из переработанных материалов с натуральной обивкой. Экологичный выбор для современного дома.</p>
+                  <div class="product-price">949€</div>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 5 -->
+            <div class="carousel-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  <div><img src="sofaCatalog5.png" style="transform:scale(0.5);"></div>
+                  <div class="product-badge">ПРЕМИУМ</div>
+                </div>
+                <div class="product-content">
+                  <h3 class="product-title">Luxury Edition</h3>
+                  <p class="product-description">Премиальный диван с ручной сборкой и кожаной обивкой. Максимальный комфорт и статус.</p>
+                  <div class="product-price">1999€</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-controls">
+            <div class="carousel-nav">
+              <button class="carousel-btn prev-btn" data-target="sofasCarousel">←</button>
+              <button class="carousel-btn next-btn" data-target="sofasCarousel">→</button>
+            </div>
+            <div class="carousel-dots" id="sofasDots">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Beds Carousel -->
+      <div class="category-section animate-fade-in-up animate-delay-2">
+        <div class="category-header">
+          <h2 class="category-title">Кровати</h2>
+        </div>
+        <div class="carousel-container">
+          <div class="carousel" id="bedsCarousel">
+            <!-- Slide 1 -->
+            <div class="carousel-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  <div><img src="bedCatalog1.png" style="transform:scale(0.4);"></div>
+                  <div class="product-badge">НОВИНКА</div>
+                </div>
+                <div class="product-content">
+                  <h3 class="product-title">Nordic Dream</h3>
+                  <p class="product-description">Деревянная кровать с изголовьем и встроенными ящиками для хранения. Идеальна для небольших спален.</p>
+                  <div class="product-price">1299€</div>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  <div><img src="bedCatalog2.png" style="transform:scale(0.25);"></div>
+                  <div class="product-badge">-20%</div>
+                </div>
+                <div class="product-content">
+                  <h3 class="product-title">Comfort Sleep</h3>
+                  <p class="product-description">Кровать с ортопедическим основанием и регулируемым изголовьем. Максимальный комфорт для здорового сна.</p>
+                  <div class="product-price">1599€</div>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="carousel-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  <div><img src="bedCatalog3.png" style="transform:scale(0.15);"></div>
+                  <div class="product-badge">ХИТ</div>
+                </div>
+                <div class="product-content">
+                  <h3 class="product-title">Minimal Frame</h3>
+                  <p class="product-description">Минималистичная кровать на металлическом каркасе. Простой дизайн, который впишется в любой интерьер.</p>
+                  <div class="product-price">1199€</div>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 4 -->
+            <div class="carousel-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  <div><img src="bedCatalog4.png" style="transform:scale(0.25);"></div>
+                </div>
+                <div class="product-content">
+                  <h3 class="product-title">Eco Wood</h3>
+                  <p class="product-description">Кровать из экологичной древесины с натуральным покрытием. Безопасна для детей и аллергиков.</p>
+                  <div class="product-price">999€</div>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 5 -->
+            <div class="carousel-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  <div><img src="bedCatalog5.png" style="transform:scale(0.4);"></div>
+                  <div class="product-badge">ПРЕМИУМ</div>
+                </div>
+                <div class="product-content">
+                  <h3 class="product-title">Royal Suite</h3>
+                  <p class="product-description">Премиальная кровать king-size с кожаной обивкой и множеством умных систем. Роскошь в каждой детали.</p>
+                  <div class="product-price">2499€</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-controls">
+            <div class="carousel-nav">
+              <button class="carousel-btn prev-btn" data-target="bedsCarousel">←</button>
+              <button class="carousel-btn next-btn" data-target="bedsCarousel">→</button>
+            </div>
+            <div class="carousel-dots" id="bedsDots">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tables & Chairs Carousel -->
+      <div class="category-section animate-fade-in-up animate-delay-3">
+        <div class="category-header">
+          <h2 class="category-title">Столы и стулья</h2>
+        </div>
+        <div class="carousel-container">
+          <div class="carousel" id="tablesCarousel">
+            <!-- Slide 1 -->
+            <div class="carousel-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  <div><img src="chair&tableCatalog1.png" style="transform:scale(0.3);"></div>
+                  <div class="product-badge">НОВИНКА</div>
+                </div>
+                <div class="product-content">
+                  <h3 class="product-title">Nordic Table</h3>
+                  <p class="product-description">Обеденный стол из массива дуба на металлических ножках. Вместимость до 6 человек.</p>
+                  <div class="product-price">599€</div>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  <div><img src="chair&tableCatalog2.png" style="transform:scale(0.35);"></div>
+                  <div class="product-badge">-30%</div>
+                </div>
+                <div class="product-content">
+                  <h3 class="product-title">Office Pro Set</h3>
+                  <p class="product-description">Комплект: стол + 4 стула для офиса. Эргономичные стулья с регулировкой высоты и поддержкой спины.</p>
+                  <div class="product-price">999€</div>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="carousel-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  <div><img src="chair&tableCatalog3.png" style="transform:scale(0.1);"></div>
+                  <div class="product-badge">ХИТ</div>
+                </div>
+                <div class="product-content">
+                  <h3 class="product-title">Bar Counter</h3>
+                  <p class="product-description">Барная стойка с 2 высокими стульями. Идеальна для просторных кухонь и зон отдыха.</p>
+                  <div class="product-price">749€</div>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 4 -->
+            <div class="carousel-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  <div><img src="chair&tableCatalog4.png" style="transform:scale(0.5);"></div>
+                </div>
+                <div class="product-content">
+                  <h3 class="product-title">Folding Set</h3>
+                  <p class="product-description">Складывающийся стол и 4 стула для дачи или пикника. Легкие и компактные.</p>
+                  <div class="product-price">449€</div>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 5 -->
+            <div class="carousel-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  <div><img src="chair&tableCatalog5.png" style="transform:scale(0.25);"></div>
+                  <div class="product-badge">ПРЕМИУМ</div>
+                </div>
+                <div class="product-content">
+                  <h3 class="product-title">Designer Collection</h3>
+                  <p class="product-description">Эксклюзивный набор от финского дизайнера: стол ручной работы + 4 дизайнерских стула.</p>
+                  <div class="product-price">1799€</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-controls">
+            <div class="carousel-nav">
+              <button class="carousel-btn prev-btn" data-target="tablesCarousel">←</button>
+              <button class="carousel-btn next-btn" data-target="tablesCarousel">→</button>
+            </div>
+            <div class="carousel-dots" id="tablesDots">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h3>NordWood</h3>
+          <p style="margin-bottom:1.5em;color:hsla(0,0%,100%,0.7);">Стильная мебель для дома и офиса. Создаем уютные пространства с 2014 года.</p>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/" class="social-link"><img src="LinkedinIcon.png" alt="LinkedIn"></a>
+            <a href="https://www.facebook.com/" class="social-link"><img src="FacebookIcon.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/" class="social-link"><img src="InstagramIcon.png" alt="Instagram"></a>
+            <a href="https://telegram.org/" class="social-link"><img src="TelegramIcon.png" alt="Telegram"></a>
+            <a href="http://x.com/" class="social-link"><img src="XIcon.png" alt="X"></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Быстрые ссылки</h3>
+          <ul class="footer-links">
+            <li>
+              <a href="index.html">🏠 Главная страница</a>
+            </li>
+            <li>
+              <a href="orderCall.html">📱 Заказать звонок</a>
+            </li>
+            <li>
+              <a href="catalog.html">📋 Каталог товаров</a>
+            </li>
+            <li>
+              <a href="Promo.html">⭐ Акции и скидки</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>© 2025 NordWood. Все права защищены. Создано с ❤️ в Финляндии.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="index.js"></script>
+  <script src="catalog.js"></script>
+</body>

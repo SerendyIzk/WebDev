@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="newlogo.png">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <span><img src="newlogo.png" alt="logo"></span>
+        <span>NordWood</span>
+      </a>
+      <button class="mobile-menu-btn">
+        <i>☰</i> 
+      </button>
+      <nav class="nav-menu">
+        <a href="catalog.html" class="nav-link">Каталог</a>
+        <a href="index.html#popularCategories" class="nav-link">Портфолио</a>
+        <a href="index.html#services" class="nav-link">Сервисы</a>
+        <a href="Promo.html" class="nav-link">Акции</a>
+        <a href="description.html" class="nav-link">О компании</a>
+        <a href="orderCall.html" class="btn">Заказать звонок</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Preview Section -->
+  <section class="preview">
+    <div class="container preview-content">
+      <h1>Действующие акции</h1>
+      <p>Специальные предложения на стильную мебель для дома и офиса</p>
+    </div>
+  </section>
+
+  <!-- Promotions Slider Section -->
+  <section class="promotions-section">
+    <div class="container">
+      <div class="section-title animate-fade-in-up animate-delay-1">
+        <h2>Текущие акции</h2>
+          <p>Воспользуйтесь нашими специальными предложениями и сэкономьте на качественной мебели</p>
+      </div>
+      <div class="slider-container animate-fade-in-up animate-delay-2">
+        <div class="slider" id="promotionsSlider">
+
+          <!-- Slide 1 -->
+          <div class="slide">
+            <div class="promotion-card">
+              <div class="promotion-header">
+                  <div class="promotion-badge">ХИТ ПРОДАЖ</div>
+                  <h3>Скидка 30% на диваны</h3>
+                    <p class="promotion-period">Действует до 31 декабря 2025</p>
+              </div>
+              <div class="promotion-content">
+                  <div class="promotion-image"><img src="sofaPromo.png" class="promotion-image-1"></div>
+                <div class="promotion-description">
+                  <p>Получите скидку 30% на все диваны из коллекции "Nordic Comfort". Идеальные решения для вашей гостиной с гарантией качества и бесплатной доставкой по Финляндии.</p>
+                </div>
+                <div class="promotion-price">
+                  <div>
+                    <div class="new-price">от 629€</div>
+                    <div class="old-price">от 899€</div>
+                  </div>
+                  <div class="save-badge">Экономия от 270€</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="slide">
+            <div class="promotion-card">
+              <div class="promotion-header">
+                <div class="promotion-badge">НОВИНКА</div>
+                <h3>Комплект спальни со скидкой 25%</h3>
+                <p class="promotion-period">Действует до 15 января 2026</p>
+              </div>
+              <div class="promotion-content">
+                  <div class="promotion-image"><img src="bedPromo.png" class="promotion-image-2"></div>
+                <div class="promotion-description">
+                  <p>Полный комплект мебели для спальни (кровать, шкаф, прикроватные тумбы) со скидкой 25%. Ортопедические матрасы в подарок при покупке комплекта. Бесплатная сборка и вывоз старой мебели.</p>
+                </div>
+                <div class="promotion-price">
+                  <div>
+                    <div class="new-price">от 1879€</div>
+                    <div class="old-price">от 2499€</div>
+                  </div>
+                  <div class="save-badge">Экономия 620€</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="slide">
+            <div class="promotion-card">
+              <div class="promotion-header">
+                <div class="promotion-badge">ЭКСКЛЮЗИВ</div>
+                <h3>Офисная мебель -20%</h3>
+                <p class="promotion-period">Действует до 28 февраля 2026</p>
+              </div>
+              <div class="promotion-content">
+                  <div class="promotion-image"><img src="officePromo.png" class="promotion-image-3"></div>
+                <div class="promotion-description">
+                  <p>Специальное предложение для бизнеса! Скидка 20% на весь ассортимент офисной мебели: столы, стулья, шкафы, полки. Бесплатный дизайн-проект при заказе от 2000€. Повышенная гарантия 3 года на все товары.</p>
+                </div>
+                <div class="promotion-price">
+                  <div>
+                    <div class="new-price">от 359€</div>
+                    <div class="old-price">от 449€</div>
+                  </div>
+                  <div class="save-badge">Экономия 90€</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="slide">
+            <div class="promotion-card">
+              <div class="promotion-header">
+                <div class="promotion-badge">ПОДАРОК</div>
+                <h3>Бесплатный стул к любому столу</h3>
+                <p class="promotion-period">Действует до 10 марта 2026</p>
+              </div>
+              <div class="promotion-content">
+                  <div class="promotion-image"><img src="chair&tablePromo.png" class="promotion-image-4"></div>
+                <div class="promotion-description">
+                  <p>При покупке любого обеденного или офисного стола получайте стильный стул в подарок! Выбор из множества моделей. Акция распространяется на все столы из каталога. Бесплатная доставка и сборка для заказов от 750€.</p>
+                </div>
+                <div class="promotion-price">
+                  <div>
+                    <div class="new-price">Стол + стул</div>
+                    <div class="old-price">Только стол</div>
+                  </div>
+                  <div class="save-badge">Подарок до 199€</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider-controls">
+          <button class="slider-btn" id="prevBtn">←</button>
+          <button class="slider-btn" id="nextBtn">→</button>
+        </div>
+
+        <div class="slider-dots" id="sliderDots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h3>NordWood</h3>
+          <p style="margin-bottom:1.5em;color:hsla(0,0%,100%,0.7);">Стильная мебель для дома и офиса. Создаем уютные пространства с 2014 года.</p>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/" class="social-link"><img src="LinkedinIcon.png" alt="LinkedIn"></a>
+            <a href="https://www.facebook.com/" class="social-link"><img src="FacebookIcon.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/" class="social-link"><img src="InstagramIcon.png" alt="Instagram"></a>
+            <a href="https://telegram.org/" class="social-link"><img src="TelegramIcon.png" alt="Telegram"></a>
+            <a href="http://x.com/" class="social-link"><img src="XIcon.png" alt="X"></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Быстрые ссылки</h3>
+          <ul class="footer-links">
+            <li>
+              <a href="index.html">🏠 Главная страница</a>
+            </li>
+            <li>
+              <a href="orderCall.html">📱 Заказать звонок</a>
+            </li>
+            <li>
+              <a href="catalog.html">📋 Каталог товаров</a>
+            </li>
+            <li>
+              <a href="Promo.html">⭐ Акции и скидки</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>© 2025 NordWood. Все права защищены. Создано с ❤️ в Финляндии.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="index.js"></script>
+  <script src="Promo.js"></script>
+</body>
+</html>
